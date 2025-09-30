@@ -323,8 +323,8 @@
 
 .thumb.card-3d .character {
   position: absolute;
-  bottom: -15%;
-  left: 50%;
+  bottom: -15%; /* Atas (15) Bawah (-15) */
+  left: 50%; /* kanan (-15) kiri (50) */
   transform: translateX(-50%) translateY(-10%);
   width: 120%;
   opacity: 0;
@@ -852,9 +852,9 @@ nextSongBtn.addEventListener('click', nextSong);
   id: 'EC-001', 
   name: 'Nama Emote 1', 
   price: 8000, 
-  bg: 'asset/emote/ec-001/bg.png', 
-  char: 'asset/emote/ec-001/char.png', 
-  gif: 'asset/emote/ec-001/cat.gif',   // << ini yg dipake di modal
+  bg: 'asset/emote/ec-001/bg.png',         // << bg thumnail
+  char: 'asset/emote/ec-001/char.png',     // << char thumnail
+  gif: 'asset/emote/ec-001/bg.png',   // << preview
   action: 'duduk', 
   creator: 'RefaMc',
   desc: `Akan banyak emote yang lainnya
@@ -867,7 +867,26 @@ nextSongBtn.addEventListener('click', nextSong);
 
 Selamat Bersenang senang`
 },
+// SLOT DATA EMOTE 1
+{ 
+  id: 'EC-002', 
+  name: 'Nama Emote 2', 
+  price: 8000, 
+  bg: 'asset/emote/ec-002/bg.png',         // << bg thumnail
+  char: 'asset/emote/ec-002/char.gif',     // << char thumnail
+  gif: 'asset/emote/ec-002/bg.png',   // << preview
+  action: 'duduk', 
+  creator: 'RefaMc',
+  desc: `Akan banyak emote yang lainnya
 
+- Kamu akan di arahkan ke DM Discord
+- DM Discrod @refastore jika tidak terjadi apa apa saat click tombol beli
+- Kirimkan ID Emote (Contoh EC-001)
+- Lakukan pembayaran
+- Via Qris atau Transfer Bank
+
+Selamat Bersenang senang`
+},
     ];
 
     // DOM Elements
